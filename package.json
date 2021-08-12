@@ -55,7 +55,7 @@
     "@size-limit/preset-small-lib": "^4.9.1",
     "@types/classnames": "^2.2.11",
     "@types/react": "^17.0.0",
-    "@types/react-custom-scrollbars": "^4.0.7",
+    "@types/react-custom-scrollbars": "^4.0.8",
     "@typescript-eslint/eslint-plugin": "^4.12.0",
     "@typescript-eslint/parser": "^4.12.0",
     "autoprefixer": "^9.8.6",
