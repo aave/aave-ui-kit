@@ -41,7 +41,7 @@ jobs:
         run: |
           npm --no-git-tag-version version prerelease --preid=beta-${{ github.sha }}
           npm run build
-          npm publish --tag canary
+          npm publish --tag canary --access public
 
       - id: release
         name: release
@@ -52,4 +52,4 @@ jobs:
           npm run build
           git tag v$(cat package.json | jq --raw-output '.version')
           git push origin v$(cat package.json | jq --raw-output '.version')
-          npm publish
+          npm publish --access public
