@@ -1,0 +1,121 @@
+@import 'src/_mixins/vars';
+@import 'src/_mixins/screen-size';
+
+.Button {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: $borderRadius;
+  box-shadow: $boxShadow;
+  transition: $transition;
+  border-width: 1px;
+  border-style: solid;
+  font-size: $small;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  &:after {
+    content: '';
+    border-radius: $borderRadius;
+    filter: blur(4px);
+    transition: $transition;
+    background: inherit;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
+  }
+  &:active {
+    opacity: 0.8;
+    &:after {
+      opacity: 0;
+    }
+  }
+  &:disabled {
+    cursor: not-allowed;
+    transition: none;
+    box-shadow: none;
+    &:after {
+      display: none;
+    }
+    &:active {
+      opacity: 1;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+
+  &__big {
+    width: 160px;
+    min-height: 40px;
+  }
+  &__medium {
+    width: 160px;
+    min-height: 40px;
+    font-size: $regular;
+    @include respond-to(xl) {
+      width: 120px;
+      min-height: 32px;
+      font-size: $small;
+    }
+  }
+  &__normal,
+  &__small {
+    font-size: $extraSmall;
+  }
+  &__normal {
+    width: 90px;
+    min-height: 30px;
+  }
+  &__small {
+    width: 70px;
+    min-height: 24px;
+    @include respond-to(sm) {
+      width: 120px;
+      min-height: 36px;
+      font-size: $small;
+    }
+  }
+
+  &__mobileBig {
+    @include respond-to(sm) {
+      width: 300px;
+      min-height: 50px;
+      font-size: $regular;
+    }
+  }
+
+  &__gradient {
+    border: none !important;
+    &:hover {
+      &:after {
+        opacity: 0.4;
+      }
+    }
+    &:after {
+      opacity: 1;
+    }
+  }
+
+  * {
+    backface-visibility: hidden;
+    transform: translateZ(0);
+  }
+}

@@ -1,0 +1,55 @@
+name: release-ci
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  release:
+    if: "!contains(github.event.head_commit.message, '[ci skip]')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: prepare
+        id: prepare
+        shell: bash
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" >> ~/.npmrc
+          git config user.name "GitHub Actions Build"
+          git config user.email "developers@aave.com"
+
+      - name: install
+        id: install
+        run: |
+          npm ci
+
+      - id: lint
+        name: lint
+        run: |
+          npm run lint
+
+      - id: prerelease
+        name: prerelease
+        if: |
+          github.event.pull_request.head.repo.full_name == github.repository &&
+          !contains(github.head_ref, 'dependabot') &&
+          !contains(github.event.head_commit.message, 'chore(release)') &&
+          github.ref != 'refs/heads/master'
+        run: |
+          npm --no-git-tag-version version prerelease --preid=beta-${{ github.sha }}
+          npm run build
+          npm publish --tag canary
+
+      - id: release
+        name: release
+        if: |
+          contains(github.event.head_commit.message, 'chore(release)') &&
+          github.ref == 'refs/heads/master'
+        run: |
+          npm run build
+          git tag v$(cat package.json | jq --raw-output '.version')
+          git push origin v$(cat package.json | jq --raw-output '.version')
+          npm publish

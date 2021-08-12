@@ -1,0 +1,62 @@
+@import 'src/_mixins/vars';
+@import 'src/_mixins/screen-size';
+
+.DropdownWrapper {
+  position: relative;
+  z-index: 2;
+
+  &__bottom {
+    .DropdownWrapper__content {
+      transform-origin: 100% 0;
+      top: calc(100% + 10px);
+    }
+  }
+
+  &__top {
+    .DropdownWrapper__content {
+      transform-origin: 0 100%;
+      bottom: calc(100% + 10px);
+    }
+  }
+
+  &__left {
+    .DropdownWrapper__content {
+      left: 0;
+    }
+  }
+
+  &__right {
+    .DropdownWrapper__content {
+      right: 0;
+    }
+  }
+
+  &__center {
+    .DropdownWrapper__content {
+      left: 50%;
+      transform: translateX(-50%) scaleY(0);
+    }
+    .DropdownWrapper__contentVisible {
+      transform: translateX(-50%) scaleY(1);
+    }
+  }
+
+  &__content {
+    background: #fff;
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: scaleY(0);
+    transition-property: transform, opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    border-radius: $borderRadius;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+  &__contentVisible {
+    height: auto;
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}

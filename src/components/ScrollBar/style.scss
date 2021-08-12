@@ -1,0 +1,12 @@
+.ScrollBar > div {
+  &:first-of-type {
+    overflow-x: hidden !important;
+  }
+  &:nth-of-type(2) {
+    display: none !important;
+  }
+  &:last-of-type {
+    border-radius: 10px !important;
+    opacity: 1;
+  }
+}

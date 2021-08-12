@@ -1,0 +1,30 @@
+@import 'src/_mixins/vars';
+@import 'src/_mixins/screen-size';
+
+.Switcher {
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__label {
+    font-size: $medium;
+    margin-right: 10px;
+    @include respond-to(xl) {
+      font-size: $small;
+      margin-right: 5px;
+    }
+    @include respond-to(md) {
+      font-size: $extraSmall;
+    }
+    @include respond-to(sm) {
+      margin-right: 10px;
+      font-size: $regular;
+    }
+  }
+
+  .Switcher__swiperDisabled {
+    opacity: 1 !important;
+  }
+}

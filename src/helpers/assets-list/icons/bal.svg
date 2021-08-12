@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Group_43173" width="256" height="256" viewBox="0 0 256 256">
+    <defs>
+        <style>
+            .cls-2{fill-rule:evenodd}
+        </style>
+    </defs>
+    <circle id="Ellipse_1480" cx="128" cy="128" r="128" fill="#fff"/>
+    <g id="Spread" transform="translate(25 19.258)">
+        <g id="pebbles-pad" transform="translate(18 39.742)">
+            <g id="pebbles">
+                <g id="Group_43172">
+                    <path id="peb-bot" d="M119.367 109.234c29.824 4.372 50.633 14.26 50.633 25.758 0 15.549-38.056 28.154-85 28.154s-85-12.6-85-28.154c0-11.5 20.809-21.386 50.633-25.758A175.831 175.831 0 0 0 85 112.469a176.776 176.776 0 0 0 33.594-3.08z" class="cls-2" transform="translate(0 -25.11)"/>
+                    <path id="peb-med" d="M111.908 48.249C138.98 51.231 158.5 59.673 158.5 69.622c0 12.439-30.511 22.523-68.149 22.523S22.2 82.061 22.2 69.622c0-9.949 19.518-18.391 46.589-21.373a135.919 135.919 0 0 0 21.56 1.665 136.56 136.56 0 0 0 20.861-1.554z" class="cls-2" transform="translate(-5.349 -11.149)"/>
+                    <g id="peb-top" transform="translate(34.446)">
+                        <ellipse id="peb-sm" cx="50.554" cy="16.892" rx="50.554" ry="16.892"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

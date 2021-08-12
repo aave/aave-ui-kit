@@ -1,0 +1,33 @@
+@import 'src/_mixins/screen-size';
+@import 'src/_mixins/vars';
+
+.AnimationArrow {
+  display: inline-block;
+  position: relative;
+  margin: 0 0 0 5px;
+  i {
+    position: absolute;
+    display: inline-block;
+    transition: $transition;
+
+    &:first-of-type {
+      left: 0;
+      transform: rotate(45deg);
+    }
+    &:last-of-type {
+      right: 0;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__active {
+    i {
+      &:first-of-type {
+        transform: rotate(-45deg);
+      }
+      &:last-of-type {
+        transform: rotate(45deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import 'src/_mixins/vars';
+@import 'src/_mixins/screen-size';
+
+.Timer {
+  font-size: $regular;
+  margin-right: 10px;
+  white-space: nowrap;
+  color: $darkBlue;
+  @include respond-to(xl) {
+    font-size: $small;
+  }
+}
