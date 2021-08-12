@@ -7,5 +7,5 @@ Project based on tsdx
 ## Installing
 
 ```shell
-npm install --save @aave/protocol-js
+npm install --save @aave/aave-ui-kit
 ```
