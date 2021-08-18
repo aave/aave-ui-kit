@@ -13,7 +13,7 @@ export enum SocialType {
   Discord = 'Discord',
 }
 
-export interface Icon {
+export interface SocialIcon {
   url: string;
   type: SocialType;
 }
@@ -29,7 +29,7 @@ export interface SocialIconsProps {
 }
 
 interface SocialIconsWrapperProps extends SocialIconsProps {
-  icons: Icon[];
+  icons: SocialIcon[];
 }
 
 const ICONS: {
