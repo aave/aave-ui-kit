@@ -17,8 +17,7 @@ import DropdownWrapper from './components/DropdownWrapper';
 import Button from './components/Button';
 import LabeledSwitch from './components/LabeledSwitch';
 import SpinLoader from './components/SpinLoader';
-import SocialIcons from './components/social/SocialIcons';
-import SocialIconsOpenSource from './components/social/SocialIconsOpenSource';
+import SocialIcons from './components/SocialIcons';
 import DarkModeSwitcher from './components/DarkModeSwitcher';
 
 export {
@@ -46,6 +45,5 @@ export {
   LabeledSwitch,
   SpinLoader,
   SocialIcons,
-  SocialIconsOpenSource,
   DarkModeSwitcher,
 };
