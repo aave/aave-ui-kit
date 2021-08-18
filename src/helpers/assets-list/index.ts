@@ -249,7 +249,14 @@ export const assetsList: Asset[] = [
     symbol: 'PAX',
     color: '#eee809',
     icon: icons.pax,
-    aIcon: aIcons.pax,
+    aIcon: aIcons.apax,
+  },
+  {
+    name: 'DeFi Pulse Index',
+    symbol: 'DPI',
+    color: '#9B74EC',
+    icon: icons.dpi,
+    aIcon: aIcons.adpi,
   },
 
   // uniswap v1 market
