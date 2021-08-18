@@ -35,6 +35,7 @@ import matic from './matic.svg';
 import renfil from './renfil.svg';
 import rai from './rai.svg';
 import pax from './pax.svg';
+import dpi from './dpi.svg';
 
 interface Images {
   [name: string]: string;
@@ -78,4 +79,5 @@ export default {
   renfil,
   rai,
   pax,
+  dpi,
 } as Images;

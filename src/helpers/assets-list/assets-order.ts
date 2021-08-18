@@ -21,6 +21,7 @@ export const assetsOrder = [
   'BAT',
   'BAL',
   'CRV',
+  'DPI',
   'ENJ',
   'KNC',
   'LEND',
