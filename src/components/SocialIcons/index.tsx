@@ -3,61 +3,22 @@ import classNames from 'classnames';
 
 import './style.scss';
 
-import twitterIcon from './images/twitterIcon.svg';
-import colorTwitterIcon from './images/colorTwitter.svg';
-import whiteTwitterIcon from './images/whiteTwitter.svg';
-import instagramIcon from './images/instagramIcon.svg';
-import colorInstagramIcon from './images/colorInstagram.svg';
-import whiteInstagramIcon from './images/whiteInstagram.svg';
-import telegramIcon from './images/telegramIcon.svg';
-import colorTelegramIcon from './images/colorTelegram.svg';
-import whiteTelegramIcon from './images/whiteTelegram.svg';
-import githubIcon from './images/githubIcon.svg';
-import colorGithubIcon from './images/colorGithub.svg';
-import whiteGithubIcon from './images/whiteGithub.svg';
-import discordIcon from './images/discordIcon.svg';
-import colorDiscordIcon from './images/colorDiscord.svg';
-import whiteDiscordIcon from './images/whiteDiscord.svg';
+import * as img from './images';
 
-const icons = [
-  {
-    url: 'https://twitter.com/aaveaave',
-    title: 'Twitter',
-    icon: twitterIcon,
-    colorIcon: colorTwitterIcon,
-    whiteIcon: whiteTwitterIcon,
-  },
-  {
-    url: 'https://www.instagram.com/aave.aave/',
-    title: 'Instagram',
-    icon: instagramIcon,
-    colorIcon: colorInstagramIcon,
-    whiteIcon: whiteInstagramIcon,
-  },
-  {
-    url: 'https://t.me/Aavesome',
-    title: 'Telegram',
-    icon: telegramIcon,
-    colorIcon: colorTelegramIcon,
-    whiteIcon: whiteTelegramIcon,
-  },
-  {
-    url: 'https://github.com/aave/aave-protocol',
-    title: 'Github',
-    icon: githubIcon,
-    colorIcon: colorGithubIcon,
-    whiteIcon: whiteGithubIcon,
-  },
-  {
-    url: 'https://aave.com/discord',
-    title: 'Discord',
-    icon: discordIcon,
-    colorIcon: colorDiscordIcon,
-    whiteIcon: whiteDiscordIcon,
-  },
-];
+export enum SocialType {
+  Twitter = 'Twitter',
+  Instagram = 'Instagram',
+  Telegram = 'Telegram',
+  Github = 'Github',
+  Discord = 'Discord',
+}
 
-interface SocialIconsProps {
+export interface Icon {
+  url: string;
+  type: SocialType;
+}
+
+export interface SocialIconsProps {
   className?: string;
   linkClassName?: string;
   iconHeight: number;
@@ -67,7 +28,42 @@ interface SocialIconsProps {
   withTitle?: boolean;
 }
 
+interface SocialIconsWrapperProps extends SocialIconsProps {
+  icons: Icon[];
+}
+
+const ICONS: {
+  [key in SocialType]: { icon: string; colorIcon: string; whiteIcon: string };
+} = {
+  [SocialType.Twitter]: {
+    icon: img.twitterIcon,
+    colorIcon: img.colorTwitterIcon,
+    whiteIcon: img.whiteTwitterIcon,
+  },
+  [SocialType.Instagram]: {
+    icon: img.instagramIcon,
+    colorIcon: img.colorInstagramIcon,
+    whiteIcon: img.whiteInstagramIcon,
+  },
+  [SocialType.Telegram]: {
+    icon: img.telegramIcon,
+    colorIcon: img.colorTelegramIcon,
+    whiteIcon: img.whiteTelegramIcon,
+  },
+  [SocialType.Github]: {
+    icon: img.githubIcon,
+    colorIcon: img.colorGithubIcon,
+    whiteIcon: img.whiteGithubIcon,
+  },
+  [SocialType.Discord]: {
+    icon: img.discordIcon,
+    colorIcon: img.colorDiscordIcon,
+    whiteIcon: img.whiteDiscordIcon,
+  },
+};
+
 export default function SocialIcons({
+  icons,
   className,
   linkClassName,
   iconHeight,
@@ -75,7 +71,7 @@ export default function SocialIcons({
   colored,
   white,
   withTitle,
-}: SocialIconsProps) {
+}: SocialIconsWrapperProps) {
   return (
     <div className={classNames('SocialIcons', className)}>
       {icons.map((item, index) => (
@@ -88,12 +84,18 @@ export default function SocialIcons({
               className={classNames(linkClassName, { SocialIcon__withTitle: withTitle })}
             >
               <img
-                src={colored ? item.colorIcon : white ? item.whiteIcon : item.icon}
+                src={
+                  colored
+                    ? ICONS[item.type].colorIcon
+                    : white
+                    ? ICONS[item.type].whiteIcon
+                    : ICONS[item.type].icon
+                }
                 height={iconHeight}
                 width={iconWidth}
                 alt="Aave"
               />
-              {withTitle && <span>{item.title}</span>}
+              {withTitle && <span>{item.type}</span>}
             </a>
           )}
         </React.Fragment>
