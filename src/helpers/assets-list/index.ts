@@ -466,7 +466,7 @@ export const getAssetInfo = (_assetSymbol: string): Asset => {
   // eslint-disable-next-line @typescript-eslint/no-shadow
   const asset = assetsList.find((asset: Asset) => asset.symbol === assetSymbol);
   const symbolFormatted = (asset && asset.formattedSymbol) || (asset && asset.symbol);
-  const symbolsArray = symbolFormatted?.split('_').filter((e) => String(e).trim());
+  const symbolsArray = symbolFormatted?.split('_').filter(e => String(e).trim());
 
   const isSymbolsArrayMoreThanOne = !!symbolsArray && symbolsArray.length > 1;
   const formattedName = isSymbolsArrayMoreThanOne ? asset && asset.name : symbolFormatted;
