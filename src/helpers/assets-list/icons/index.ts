@@ -36,6 +36,7 @@ import renfil from './renfil.svg';
 import rai from './rai.svg';
 import pax from './pax.svg';
 import dpi from './dpi.svg';
+import avax from './avax.svg';
 
 interface Images {
   [name: string]: string;
@@ -80,4 +81,5 @@ export default {
   rai,
   pax,
   dpi,
+  avax,
 } as Images;

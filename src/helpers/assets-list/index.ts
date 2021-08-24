@@ -444,6 +444,21 @@ export const assetsList: Asset[] = [
     color: '#2bbdf7',
     icon: icons.matic,
   },
+
+  // avalanche icon
+  {
+    name: 'Avalanche',
+    symbol: 'AVAX',
+    color: '#2bbdf7',
+    icon: icons.avax,
+    aIcon: icons.avax, // TODO: create new aAvax svg
+  },
+  {
+    name: 'Wrapped Avalanche',
+    symbol: 'WAVAX',
+    color: '#2bbdf7',
+    icon: icons.avax,
+  },
 ];
 
 export const getAssetInfo = (_assetSymbol: string): Asset => {
@@ -451,7 +466,7 @@ export const getAssetInfo = (_assetSymbol: string): Asset => {
   // eslint-disable-next-line @typescript-eslint/no-shadow
   const asset = assetsList.find((asset: Asset) => asset.symbol === assetSymbol);
   const symbolFormatted = (asset && asset.formattedSymbol) || (asset && asset.symbol);
-  const symbolsArray = symbolFormatted?.split('_').filter(e => String(e).trim());
+  const symbolsArray = symbolFormatted?.split('_').filter((e) => String(e).trim());
 
   const isSymbolsArrayMoreThanOne = !!symbolsArray && symbolsArray.length > 1;
   const formattedName = isSymbolsArrayMoreThanOne ? asset && asset.name : symbolFormatted;
