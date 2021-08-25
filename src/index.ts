@@ -1,4 +1,4 @@
-import { getAssetInfo, assetsList } from './helpers/assets-list';
+import { getAssetInfo, assetsList, Asset, getAssetInfoFactory } from './helpers/assets-list';
 import { assetsOrder } from './helpers/assets-list/assets-order';
 import { getAssetColor, isAssetStable, canBeEnsAddress } from './helpers/asset-params';
 
@@ -21,6 +21,8 @@ import SocialIcons, { SocialType, SocialIcon } from './components/SocialIcons';
 import DarkModeSwitcher from './components/DarkModeSwitcher';
 
 export {
+  Asset,
+  getAssetInfoFactory,
   getAssetInfo,
   assetsList,
   assetsOrder,

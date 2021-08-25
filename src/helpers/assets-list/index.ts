@@ -1,7 +1,7 @@
 import icons from './icons';
 import aIcons from './aIcons';
 
-interface Asset {
+export interface Asset {
   name: string;
   symbol: string;
   formattedSymbol?: string;
@@ -461,10 +461,10 @@ export const assetsList: Asset[] = [
   },
 ];
 
-export const getAssetInfo = (_assetSymbol: string): Asset => {
+export const getAssetInfoFactory = (_assetsList: Asset[]) => (_assetSymbol: string): Asset => {
   const assetSymbol = _assetSymbol.toUpperCase();
   // eslint-disable-next-line @typescript-eslint/no-shadow
-  const asset = assetsList.find((asset: Asset) => asset.symbol === assetSymbol);
+  const asset = _assetsList.find((asset: Asset) => asset.symbol === assetSymbol);
   const symbolFormatted = (asset && asset.formattedSymbol) || (asset && asset.symbol);
   const symbolsArray = symbolFormatted?.split('_').filter(e => String(e).trim());
 
@@ -485,3 +485,5 @@ export const getAssetInfo = (_assetSymbol: string): Asset => {
     symbol: assetSymbol,
   };
 };
+
+export const getAssetInfo = getAssetInfoFactory(assetsList);
