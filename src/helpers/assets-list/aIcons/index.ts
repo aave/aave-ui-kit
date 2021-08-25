@@ -32,6 +32,7 @@ import aampl from './aampl.svg';
 import arai from './arai.svg';
 import apax from './apax.svg';
 import adpi from './adpi.svg';
+import aavax from './aavax.svg';
 
 interface Images {
   [name: string]: string;
@@ -72,4 +73,5 @@ export default {
   arai,
   apax,
   adpi,
+  aavax,
 } as Images;

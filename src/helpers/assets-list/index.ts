@@ -451,13 +451,13 @@ export const assetsList: Asset[] = [
     symbol: 'AVAX',
     color: '#2bbdf7',
     icon: icons.avax,
-    aIcon: icons.avax, // TODO: create new aAvax svg
+    aIcon: aIcons.aavax, // TODO: create new aAvax svg
   },
   {
     name: 'Wrapped Avalanche',
     symbol: 'WAVAX',
     color: '#2bbdf7',
-    icon: icons.avax,
+    icon: icons.wavax,
   },
 ];
 
