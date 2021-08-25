@@ -444,6 +444,21 @@ export const assetsList: Asset[] = [
     color: '#2bbdf7',
     icon: icons.matic,
   },
+
+  // avalanche icon
+  {
+    name: 'Avalanche',
+    symbol: 'AVAX',
+    color: '#2bbdf7',
+    icon: icons.avax,
+    aIcon: aIcons.aavax, // TODO: create new aAvax svg
+  },
+  {
+    name: 'Wrapped Avalanche',
+    symbol: 'WAVAX',
+    color: '#2bbdf7',
+    icon: icons.wavax,
+  },
 ];
 
 export const getAssetInfo = (_assetSymbol: string): Asset => {
