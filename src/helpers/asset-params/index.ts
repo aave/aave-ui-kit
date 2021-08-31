@@ -7,7 +7,7 @@ export const getAssetColor = (assetSymbol: string) => {
   return assetColor || '#2ebac6';
 };
 
-const STABLE_ASSETS = [
+export const STABLE_ASSETS = [
   'DAI',
   'UNIDAI',
   'USDC',

@@ -2,12 +2,12 @@ import React from 'react';
 import classNames from 'classnames';
 
 import { useThemeContext } from '../../libs/theme-provider';
-import { getAssetInfo } from '../../helpers/assets-list';
+import { Asset, getAssetInfo as getAssetInfoDefault } from '../../helpers/assets-list';
 import DoubleIcon from './DoubleIcon';
 
 import './style.scss';
 
-interface TokenIconProps {
+export interface TokenIconProps {
   tokenSymbol: string;
   tokenFullName?: string;
   className?: string;
@@ -16,6 +16,7 @@ interface TokenIconProps {
   color?: string;
   withTokenSymbol?: boolean;
   onWhiteBackground?: boolean;
+  getAssetInfo?: (symbol: string) => Asset;
 }
 
 export default function TokenIcon({
@@ -27,6 +28,7 @@ export default function TokenIcon({
   color,
   withTokenSymbol,
   onWhiteBackground,
+  getAssetInfo = getAssetInfoDefault,
 }: TokenIconProps) {
   const { isCurrentThemeDark } = useThemeContext();
   const asset = getAssetInfo(tokenSymbol);

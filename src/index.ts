@@ -1,13 +1,18 @@
 import { getAssetInfo, assetsList, Asset, getAssetInfoFactory } from './helpers/assets-list';
 import { assetsOrder } from './helpers/assets-list/assets-order';
-import { getAssetColor, isAssetStable, canBeEnsAddress } from './helpers/asset-params';
+import {
+  getAssetColor,
+  isAssetStable,
+  canBeEnsAddress,
+  STABLE_ASSETS,
+} from './helpers/asset-params';
 
 import { textCenterEllipsis } from './helpers/text-center-ellipsis';
 import { timeNowInSeconds } from './helpers/time-now-in-seconds';
 
 import { ThemeProvider, useThemeContext, rgba, gradient, ThemeNames } from './libs/theme-provider';
 
-import TokenIcon from './components/TokenIcon';
+import TokenIcon, { TokenIconProps } from './components/TokenIcon';
 import Timer from './components/Timer';
 import AnimationArrow from './components/AnimationArrow';
 import BasicModal from './components/BasicModal';
@@ -38,6 +43,7 @@ export {
   gradient,
   ThemeNames,
   TokenIcon,
+  TokenIconProps,
   Timer,
   AnimationArrow,
   BasicModal,
@@ -51,4 +57,5 @@ export {
   SocialType,
   SocialIcon,
   DarkModeSwitcher,
+  STABLE_ASSETS,
 };
