@@ -1,18 +1,12 @@
 {
   "version": "0.1.5",
+  "private": false,
   "license": "BSD-3-Clause",
   "description": "This package contains the ui components and helpers for AAVE projects",
-  "author": "AAVE <tech@aave.com>",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "name": "@aave/aave-ui-kit",
   "module": "dist/aave-ui-kit.esm.js",
-  "contributors": [
-    {
-      "name": "Oleksandr Tkach",
-      "email": "oleksand@aave.com"
-    }
-  ],
   "repository": {
     "type": "git",
     "url": "git@githab.com:aave/aave-ui-kit.git"

@@ -1,6 +1,11 @@
 import { getAssetInfo, assetsList, Asset, getAssetInfoFactory } from './helpers/assets-list';
 import { assetsOrder } from './helpers/assets-list/assets-order';
-import { getAssetColor, isAssetStable, canBeEnsAddress } from './helpers/asset-params';
+import {
+  getAssetColor,
+  isAssetStable,
+  canBeEnsAddress,
+  STABLE_ASSETS,
+} from './helpers/asset-params';
 
 import { textCenterEllipsis } from './helpers/text-center-ellipsis';
 import { timeNowInSeconds } from './helpers/time-now-in-seconds';
@@ -51,4 +56,5 @@ export {
   SocialType,
   SocialIcon,
   DarkModeSwitcher,
+  STABLE_ASSETS,
 };
