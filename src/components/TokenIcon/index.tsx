@@ -7,7 +7,7 @@ import DoubleIcon from './DoubleIcon';
 
 import './style.scss';
 
-interface TokenIconProps {
+export interface TokenIconProps {
   tokenSymbol: string;
   tokenFullName?: string;
   className?: string;

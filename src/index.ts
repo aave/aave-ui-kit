@@ -12,7 +12,7 @@ import { timeNowInSeconds } from './helpers/time-now-in-seconds';
 
 import { ThemeProvider, useThemeContext, rgba, gradient, ThemeNames } from './libs/theme-provider';
 
-import TokenIcon from './components/TokenIcon';
+import TokenIcon, { TokenIconProps } from './components/TokenIcon';
 import Timer from './components/Timer';
 import AnimationArrow from './components/AnimationArrow';
 import BasicModal from './components/BasicModal';
@@ -43,6 +43,7 @@ export {
   gradient,
   ThemeNames,
   TokenIcon,
+  TokenIconProps,
   Timer,
   AnimationArrow,
   BasicModal,
