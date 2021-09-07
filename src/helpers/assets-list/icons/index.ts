@@ -38,6 +38,7 @@ import pax from './pax.svg';
 import dpi from './dpi.svg';
 import avax from './avax.svg';
 import wavax from './wavax.svg';
+import frax from './frax.svg';
 
 interface Images {
   [name: string]: string;
@@ -84,4 +85,5 @@ export default {
   dpi,
   avax,
   wavax,
+  frax,
 } as Images;

@@ -14,6 +14,7 @@ export const assetsOrder = [
   'SETH',
   'WBTC',
   'BUSD',
+  'FRAX',
   'SUSD',
   'TUSD',
   'AAVE',

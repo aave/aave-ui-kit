@@ -258,6 +258,13 @@ export const assetsList: Asset[] = [
     icon: icons.dpi,
     aIcon: aIcons.adpi,
   },
+  {
+    name: 'Frax',
+    symbol: 'FRAX',
+    color: '#484848',
+    icon: icons.frax,
+    aIcon: aIcons.afrax,
+  },
 
   // uniswap v1 market
   {
