@@ -50,7 +50,7 @@ jobs:
           !contains(github.event.head_commit.message, 'chore(release)') &&
           github.ref != 'refs/heads/master'
         run: |
-          npm run release --message "chore(release): Release v%s :tada: [ci skip]" --prerelease ${{ github.sha }}
+          npm run release -- --message "chore(release): Release v%s :tada: [ci skip]" --prerelease ${{ github.sha }}
           npm publish --tag canary --access public
 
       - id: release
@@ -58,6 +58,6 @@ jobs:
         if: |
           github.ref == 'refs/heads/master'
         run: |
-          npm run release --message "chore(release): Release v%s :tada: [ci skip]"
+          npm run release -- --message "chore(release): Release v%s :tada: [ci skip]"
           git push --follow-tags origin master
           npm publish --access public
