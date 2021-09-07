@@ -19,6 +19,7 @@ export const STABLE_ASSETS = [
   'BUSD',
   'GUSD',
   'PAX',
+  'FRAX',
 ];
 
 export const isAssetStable = (assetSymbol: string) => {
