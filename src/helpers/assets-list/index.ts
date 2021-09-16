@@ -265,6 +265,20 @@ export const assetsList: Asset[] = [
     icon: icons.frax,
     aIcon: aIcons.afrax,
   },
+  {
+    name: 'USDP',
+    symbol: 'USDP',
+    color: '#eee809',
+    icon: icons.pax,
+    aIcon: aIcons.apax,
+  },
+  {
+    name: 'Fei Protocol',
+    symbol: 'FEI',
+    color: '#22996E',
+    icon: icons.fei,
+    aIcon: aIcons.fei,
+  },
 
   // uniswap v1 market
   {
