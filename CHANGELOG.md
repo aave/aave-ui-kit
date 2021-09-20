@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.10 (2021-09-20)
+
+
+### Bug Fixes
+
+* updated USDP icon & assets order ([#49](https://githab.com/aave/aave-ui-kit/issues/49)) ([1c183e3](https://githab.com/aave/aave-ui-kit/commit/1c183e351b1bb30c023fd908b9bd724698186309))
+
 ### 0.1.9 (2021-09-16)
 
 
