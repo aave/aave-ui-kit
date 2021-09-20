@@ -269,8 +269,8 @@ export const assetsList: Asset[] = [
     name: 'USDP',
     symbol: 'USDP',
     color: '#eee809',
-    icon: icons.pax,
-    aIcon: aIcons.apax,
+    icon: icons.usdp,
+    aIcon: aIcons.ausdp,
   },
   {
     name: 'Fei Protocol',

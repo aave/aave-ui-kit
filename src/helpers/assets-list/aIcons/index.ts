@@ -35,6 +35,7 @@ import adpi from './adpi.svg';
 import aavax from './aavax.svg';
 import afrax from './afrax.svg';
 import afei from './afei.svg';
+import ausdp from './ausdp.svg';
 
 interface Images {
   [name: string]: string;
@@ -78,4 +79,5 @@ export default {
   aavax,
   afrax,
   afei,
+  ausdp,
 } as Images;
