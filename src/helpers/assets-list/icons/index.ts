@@ -40,6 +40,7 @@ import avax from './avax.svg';
 import wavax from './wavax.svg';
 import frax from './frax.svg';
 import fei from './fei.svg';
+import usdp from './usdp.svg';
 
 interface Images {
   [name: string]: string;
@@ -88,4 +89,5 @@ export default {
   wavax,
   frax,
   fei,
+  usdp,
 } as Images;
