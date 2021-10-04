@@ -480,6 +480,48 @@ export const assetsList: Asset[] = [
     color: '#2bbdf7',
     icon: icons.wavax,
   },
+  {
+    name: 'Aave',
+    symbol: 'AAVE.e',
+    color: '#b6509e',
+    icon: icons.aave,
+    aIcon: aIcons.aaave,
+  },
+  {
+    name: 'DAI',
+    symbol: 'DAI.e',
+    color: '#f7b14a',
+    icon: icons.dai,
+    aIcon: aIcons.adai,
+  },
+  {
+    name: 'Wrapped ETH',
+    symbol: 'WETH.e',
+    color: '#000000',
+    icon: icons.weth,
+    aIcon: aIcons.aweth,
+  },
+  {
+    name: 'USD Coin',
+    symbol: 'USDC.e',
+    color: '#2775ca',
+    icon: icons.usdc,
+    aIcon: aIcons.ausdc,
+  },
+  {
+    name: 'USDT Coin',
+    symbol: 'USDT.e',
+    color: '#4db196',
+    icon: icons.usdt,
+    aIcon: aIcons.ausdt,
+  },
+  {
+    name: 'WBTC Coin',
+    symbol: 'WBTC.e',
+    color: '#ff7600',
+    icon: icons.wbtc,
+    aIcon: aIcons.awbtc,
+  },
 ];
 
 export const getAssetInfoFactory = (_assetsList: Asset[]) => (_assetSymbol: string): Asset => {
