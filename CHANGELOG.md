@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.12 (2021-10-05)
+
+
+### Features
+
+* added avalanche new symbols ([#55](https://githab.com/aave/aave-ui-kit/issues/55)) ([0b24e17](https://githab.com/aave/aave-ui-kit/commit/0b24e1749ae7f9e2b248b371eed6c6185e4eb634))
+
 ### 0.1.11 (2021-10-05)
 
 
