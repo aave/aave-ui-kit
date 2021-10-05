@@ -18,6 +18,7 @@ import AnimationArrow from './components/AnimationArrow';
 import BasicModal from './components/BasicModal';
 import ScrollBar from './components/ScrollBar';
 import Switcher from './components/Switcher';
+import CustomTooltip from './components/CustomTooltip';
 
 import DropdownWrapper from './components/DropdownWrapper';
 import Button from './components/Button';
@@ -49,6 +50,7 @@ export {
   BasicModal,
   ScrollBar,
   Switcher,
+  CustomTooltip,
   DropdownWrapper,
   Button,
   LabeledSwitch,

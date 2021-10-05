@@ -1,0 +1,32 @@
+@import 'src/_mixins/screen-size';
+@import 'src/_mixins/vars';
+
+.CustomTooltip {
+  max-width: 550px;
+  display: block;
+  padding: 7px 10px;
+  border-radius: $borderRadius;
+  box-shadow: $boxShadow;
+  background: $darkBlue !important;
+  @include respond-to(xl) {
+    max-width: 380px;
+  }
+
+  &:after {
+    border-top-color: $darkBlue !important;
+  }
+
+  &__content {
+    font-size: $medium;
+    @include respond-to(xl) {
+      font-size: $extraSmall;
+    }
+  }
+
+  &__dark {
+    background: $mainBg !important;
+    &:after {
+      border-top-color: $mainBg !important;
+    }
+  }
+}

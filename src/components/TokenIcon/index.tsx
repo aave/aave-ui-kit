@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 import classNames from 'classnames';
 
-import { useThemeContext } from '../../libs/theme-provider';
+import { useThemeContext } from '../../index';
 import { Asset, getAssetInfo as getAssetInfoDefault } from '../../helpers/assets-list';
-import DoubleIcon from './DoubleIcon';
+import MultipleIcons from './MultipleIcons';
+import CustomTooltip from '../CustomTooltip';
 
 import './style.scss';
 
@@ -17,6 +18,8 @@ export interface TokenIconProps {
   withTokenSymbol?: boolean;
   onWhiteBackground?: boolean;
   getAssetInfo?: (symbol: string) => Asset;
+  style?: CSSProperties;
+  tooltipId?: string;
 }
 
 export default function TokenIcon({
@@ -29,6 +32,8 @@ export default function TokenIcon({
   withTokenSymbol,
   onWhiteBackground,
   getAssetInfo = getAssetInfoDefault,
+  style,
+  tooltipId,
 }: TokenIconProps) {
   const { isCurrentThemeDark } = useThemeContext();
   const asset = getAssetInfo(tokenSymbol);
@@ -54,18 +59,24 @@ export default function TokenIcon({
         TokenIcon__onWhiteBackground: onWhiteBackground,
         TokenIcon__withSymbolAndName: withTokenSymbol,
       })}
+      style={style}
     >
       {icon && tokenSymbol !== 'USD' && (
-        <img src={icon} alt={tokenSymbol} height={height} width={width} />
+        <img
+          className="TokenIcon__image"
+          src={icon}
+          alt={tokenSymbol}
+          height={height}
+          width={width}
+        />
       )}
 
       {!!asset.symbolsArray && asset.symbolsArray.length > 2 && (
-        <DoubleIcon
+        <MultipleIcons
           width={width}
           height={height}
-          separatorSymbol={asset.symbolsArray[0]}
-          firstSymbol={asset.symbolsArray[1]}
-          secondSymbol={asset.symbolsArray[2]}
+          marketSymbol={asset.symbolsArray[0]}
+          symbols={asset.symbolsArray}
         />
       )}
 
@@ -76,11 +87,15 @@ export default function TokenIcon({
       )}
 
       {tokenFullName && (
-        <p className="TokenIcon__name">
+        <p className="TokenIcon__name" data-tip={true} data-for={tooltipId}>
           <b>{tokenFullName}</b>
           {color && <span className="TokenIcon__color-dot" style={{ backgroundColor: color }} />}
           {withTokenSymbol && displayedTokenSymbol && <span> ({displayedTokenSymbol})</span>}
         </p>
+      )}
+
+      {!!tooltipId && !!tokenFullName && (
+        <CustomTooltip tooltipId={tooltipId} text={tokenFullName} />
       )}
     </div>
   );
