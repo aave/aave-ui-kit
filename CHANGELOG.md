@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.11 (2021-10-05)
+
+
+### Bug Fixes
+
+* double icons changed to multiple icons ([#56](https://githab.com/aave/aave-ui-kit/issues/56)) ([a7bef7f](https://githab.com/aave/aave-ui-kit/commit/a7bef7f4d8b60806a26c91f6502e39131f46ecca))
+
 ### 0.1.10 (2021-09-20)
 
 
