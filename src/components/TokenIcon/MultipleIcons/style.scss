@@ -1,0 +1,23 @@
+@import 'src/_mixins/vars';
+@import 'src/_mixins/screen-size';
+
+.MultipleIcons {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-right: 10px;
+  @include respond-to(sm) {
+    margin-right: 7px;
+  }
+
+  .TokenIcon img,
+  .MultipleIcons__separator.MultipleIcons__separator,
+  img {
+    margin-right: 0;
+  }
+  &__symbols {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

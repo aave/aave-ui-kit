@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  img {
+  &__image {
     margin-right: 10px;
     @include respond-to(sm) {
       margin-right: 7px;
