@@ -563,6 +563,7 @@ export const assetsList: Asset[] = [
   {
     name: 'Aave (AAVE.e)',
     symbol: 'AAVE.E',
+    formattedSymbol: 'AAVE.e',
     color: '#b6509e',
     icon: icons.aave,
     aIcon: aIcons.aaave,
@@ -570,6 +571,7 @@ export const assetsList: Asset[] = [
   {
     name: 'DAI (DAI.e)',
     symbol: 'DAI.E',
+    formattedSymbol: 'DAI.e',
     color: '#f7b14a',
     icon: icons.dai,
     aIcon: aIcons.adai,
@@ -577,6 +579,7 @@ export const assetsList: Asset[] = [
   {
     name: 'Wrapped ETH (WETH.e)',
     symbol: 'WETH.E',
+    formattedSymbol: 'WETH.e',
     color: '#000000',
     icon: icons.weth,
     aIcon: aIcons.aweth,
@@ -584,6 +587,7 @@ export const assetsList: Asset[] = [
   {
     name: 'USD Coin (USDC.e)',
     symbol: 'USDC.E',
+    formattedSymbol: 'USDC.e',
     color: '#2775ca',
     icon: icons.usdc,
     aIcon: aIcons.ausdc,
@@ -591,6 +595,7 @@ export const assetsList: Asset[] = [
   {
     name: 'USDT Coin (USDT.e)',
     symbol: 'USDT.E',
+    formattedSymbol: 'USDT.e',
     color: '#4db196',
     icon: icons.usdt,
     aIcon: aIcons.ausdt,
@@ -598,6 +603,7 @@ export const assetsList: Asset[] = [
   {
     name: 'WBTC Coin (WBTC.e)',
     symbol: 'WBTC.E',
+    formattedSymbol: 'WBTC.e',
     color: '#ff7600',
     icon: icons.wbtc,
     aIcon: aIcons.awbtc,
