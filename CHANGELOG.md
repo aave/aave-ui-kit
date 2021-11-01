@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.14 (2021-11-01)
+
+
+### Bug Fixes
+
+* rename Fei -> Fei USD ([#58](https://githab.com/aave/aave-ui-kit/issues/58)) ([921b641](https://githab.com/aave/aave-ui-kit/commit/921b6418a91fa4e0be97879b4948c57b2fb75ae6))
+
 ### 0.1.13 (2021-10-06)
 
 
