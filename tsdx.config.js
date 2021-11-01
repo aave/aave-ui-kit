@@ -5,19 +5,21 @@ const cssnano = require('cssnano');
 
 module.exports = {
   rollup(config, options) {
-
     config.plugins.push(
-      svg({
+      /*svg({
         base64: true,
-      }),
+      }),*/
       postcss({
         plugins: [
           cssnano({
-            preset: ['default', {
-              discardComments: {
-                removeAll: true,
+            preset: [
+              'default',
+              {
+                discardComments: {
+                  removeAll: true,
+                },
               },
-            }]
+            ],
           }),
           autoprefixer({ grid: true }),
         ],
