@@ -274,7 +274,7 @@ export const assetsList: Asset[] = [
     aIcon: aIcons.ausdp,
   },
   {
-    name: 'Fei Protocol',
+    name: 'Fei USD',
     symbol: 'FEI',
     color: '#22996E',
     icon: icons.fei,
