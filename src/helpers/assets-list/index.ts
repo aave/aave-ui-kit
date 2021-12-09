@@ -453,6 +453,20 @@ export const assetsList: Asset[] = [
     color: '#ff007a',
   },
   {
+    name: 'G-UNI DAI/USDC',
+    symbol: 'GUNIDAIUSDC',
+    formattedSymbol: 'GUNI_DAI_USDC',
+    shortSymbol: 'DAI/USDC',
+    color: '#ff007a',
+  },
+  {
+    name: 'G-UNI DAI/USDC',
+    symbol: 'GUNIUSDCUSDT',
+    formattedSymbol: 'GUNI_USDC_USDT',
+    shortSymbol: 'USDC/USDT',
+    color: '#ff007a',
+  },
+  {
     name: 'BPT WBTC/WETH',
     symbol: 'BPTWBTCWETH',
     formattedSymbol: 'BPT_WBTC_WETH',
