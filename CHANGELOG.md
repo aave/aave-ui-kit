@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.15 (2021-12-10)
+
+
+### Bug Fixes
+
+* TokenIcon (added display of aToken icon) ([#71](https://githab.com/aave/aave-ui-kit/issues/71)) ([084ec80](https://githab.com/aave/aave-ui-kit/commit/084ec80e1512b4867039215e3b36b58590581b2d))
+
 ### 0.1.14 (2021-11-01)
 
 ### 0.1.13 (2021-10-06)
