@@ -10,5 +10,5 @@ interface SeparatorSymbol {
 export const images: SeparatorSymbol = {
   UNI,
   BPT,
-  GUNI
+  GUNI,
 };

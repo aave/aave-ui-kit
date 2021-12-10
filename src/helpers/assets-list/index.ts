@@ -460,7 +460,7 @@ export const assetsList: Asset[] = [
     color: '#ff007a',
   },
   {
-    name: 'G-UNI DAI/USDC',
+    name: 'G-UNI USDC/USDT',
     symbol: 'GUNIUSDCUSDT',
     formattedSymbol: 'GUNI_USDC_USDT',
     shortSymbol: 'USDC/USDT',
