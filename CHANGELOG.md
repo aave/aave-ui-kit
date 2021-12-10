@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.16 (2021-12-10)
+
+
+### Bug Fixes
+
+* eslint error & G-UNI icon ([811f372](https://githab.com/aave/aave-ui-kit/commit/811f3723679d76380c4e9ba1894d8a675edec2da))
+
 ### 0.1.15 (2021-12-10)
 
 
