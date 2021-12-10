@@ -608,6 +608,14 @@ export const assetsList: Asset[] = [
     icon: icons.wbtc,
     aIcon: aIcons.awbtc,
   },
+
+  // Tribe
+  {
+    name: 'Tribe',
+    symbol: 'TRIBE',
+    color: '#358ed0',
+    icon: icons.tribe,
+  },
 ];
 
 export const getAssetInfoFactory = (_assetsList: Asset[]) => (_assetSymbol: string): Asset => {

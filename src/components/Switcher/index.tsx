@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, ReactElement } from 'react';
+import React, { useState, useEffect, useCallback, ReactElement, ReactNode } from 'react';
 import Switch from 'react-switch';
 import classNames from 'classnames';
 
@@ -6,8 +6,8 @@ import './style.scss';
 
 type SwitcherProps = {
   onSwitch: (value: boolean) => void;
-  offLabel?: string;
-  onLabel?: string;
+  offLabel?: string | ReactNode;
+  onLabel?: string | ReactNode;
   onColor?: string;
   offColor?: string;
   value: boolean | undefined;

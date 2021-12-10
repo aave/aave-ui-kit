@@ -41,6 +41,7 @@ import wavax from './wavax.svg';
 import frax from './frax.svg';
 import fei from './fei.svg';
 import usdp from './usdp.svg';
+import tribe from './tribe.svg';
 
 interface Images {
   [name: string]: string;
@@ -90,4 +91,5 @@ export default {
   frax,
   fei,
   usdp,
+  tribe,
 } as Images;

@@ -20,6 +20,7 @@ export interface TokenIconProps {
   getAssetInfo?: (symbol: string) => Asset;
   style?: CSSProperties;
   tooltipId?: string;
+  isAtokenIcon?: boolean;
 }
 
 export default function TokenIcon({
@@ -34,11 +35,12 @@ export default function TokenIcon({
   getAssetInfo = getAssetInfoDefault,
   style,
   tooltipId,
+  isAtokenIcon,
 }: TokenIconProps) {
   const { isCurrentThemeDark } = useThemeContext();
   const asset = getAssetInfo(tokenSymbol);
 
-  const icon = asset.icon || undefined;
+  const icon = isAtokenIcon ? (asset.aIcon ? asset.aIcon : asset.icon) : asset.icon || undefined;
 
   let displayedTokenSymbol = '';
   if (
