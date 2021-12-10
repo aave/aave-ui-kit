@@ -1,5 +1,6 @@
 import UNI from './UNI.svg';
 import BPT from './BPT.svg';
+import GUNI from './GUNI.svg';
 
 interface SeparatorSymbol {
   [key: string]: string;
@@ -9,4 +10,5 @@ interface SeparatorSymbol {
 export const images: SeparatorSymbol = {
   UNI,
   BPT,
+  GUNI
 };

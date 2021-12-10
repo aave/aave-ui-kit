@@ -64,6 +64,9 @@ export const assetsOrder = [
   'UNIWBTCWETH',
   'UNIYFIWETH',
 
+  'GUNIDAIUSDC',
+  'GUNIUSDCUSDT',
+
   'BPTBALWETH',
   'BPTDPIWBTCWETH',
   'BPTLINKWETH',
