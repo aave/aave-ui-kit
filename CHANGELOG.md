@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.17 (2021-12-23)
+
+
+### Bug Fixes
+
+* switcher html structure ([0a4f58c](https://githab.com/aave/aave-ui-kit/commit/0a4f58cb5e723e4945045ce44ada17afbad90077))
+
 ### 0.1.16 (2021-12-10)
 
 
