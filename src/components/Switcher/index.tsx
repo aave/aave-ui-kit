@@ -56,9 +56,9 @@ export default function Switcher({
     <div className={classNames('Switcher', className)}>
       <div className="Switcher__wrapper">
         {onLabel && offLabel && (
-          <p className="Switcher__label" style={{ color: switching ? onColor : offColor }}>
+          <div className="Switcher__label" style={{ color: switching ? onColor : offColor }}>
             {switching ? onLabel : offLabel}
-          </p>
+          </div>
         )}
 
         <Switch
