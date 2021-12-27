@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.18 (2021-12-27)
+
+
+### Bug Fixes
+
+* added EURS asset symbol and params ([2105e3c](https://githab.com/aave/aave-ui-kit/commit/2105e3cf21bd5a6d6284e9c733b5b7da347a9360))
+
 ### 0.1.17 (2021-12-23)
 
 
