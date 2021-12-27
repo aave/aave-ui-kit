@@ -280,6 +280,13 @@ export const assetsList: Asset[] = [
     icon: icons.fei,
     aIcon: aIcons.fei,
   },
+  {
+    name: 'STASIS EURO',
+    symbol: 'EURS',
+    color: '#406BEE',
+    icon: icons.eurs,
+    aIcon: aIcons.aeurs,
+  },
 
   // uniswap v1 market
   {

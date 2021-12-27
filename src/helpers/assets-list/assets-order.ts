@@ -2,6 +2,7 @@
 export const assetsOrder = [
   'MATIC',
   'WMATIC',
+  'BUSD',
   'DAI',
   'UNIDAI',
   'GUSD',
@@ -12,6 +13,7 @@ export const assetsOrder = [
   'USDP',
   'USDT',
   'UNIUSDT',
+  'EURS',
   'BAL',
   'ETH',
   'WETH',
@@ -23,7 +25,6 @@ export const assetsOrder = [
   'WBTC',
   'XSUSHI',
   'YFI',
-  'BUSD',
   'FEI',
   'FRAX',
   'AAVE',

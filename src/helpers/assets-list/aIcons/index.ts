@@ -36,6 +36,7 @@ import aavax from './aavax.svg';
 import afrax from './afrax.svg';
 import afei from './afei.svg';
 import ausdp from './ausdp.svg';
+import aeurs from './aeurs.svg';
 
 interface Images {
   [name: string]: string;
@@ -80,4 +81,5 @@ export default {
   afrax,
   afei,
   ausdp,
+  aeurs,
 } as Images;
