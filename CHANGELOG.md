@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.19 (2022-01-11)
+
+
+### Bug Fixes
+
+* discord icon ([b9dd298](https://githab.com/aave/aave-ui-kit/commit/b9dd298bce3bbbd6118af945b0d2fd0d8d0156e4))
+
 ### 0.1.18 (2021-12-27)
 
 
