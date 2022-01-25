@@ -6,7 +6,6 @@ import dai from './dai.svg';
 import eth from './eth.svg';
 import knc from './knc.svg';
 import lend from './lend.svg';
-import alend from './alend.svg';
 import link from './link.svg';
 import mana from './mana.svg';
 import mkr from './mkr.svg';
@@ -22,7 +21,6 @@ import zrx from './zrx.svg';
 import enj from './enj.svg';
 import ren from './ren.svg';
 import yfi from './yfi.svg';
-import ayfi from './ayfi.svg';
 import uni from './uni.svg';
 import gusd from './gusd.svg';
 import weth from './weth.svg';
@@ -43,6 +41,8 @@ import fei from './fei.svg';
 import usdp from './usdp.svg';
 import tribe from './tribe.svg';
 import eurs from './eurs.svg';
+import one from './one.svg';
+import ftm from './ftm.svg';
 
 interface Images {
   [name: string]: string;
@@ -57,7 +57,6 @@ export default {
   eth,
   knc,
   lend,
-  alend,
   link,
   mana,
   mkr,
@@ -72,7 +71,6 @@ export default {
   zrx,
   enj,
   ren,
-  ayfi,
   yfi,
   uni,
   gusd,
@@ -94,4 +92,6 @@ export default {
   usdp,
   tribe,
   eurs,
+  one,
+  ftm,
 } as Images;

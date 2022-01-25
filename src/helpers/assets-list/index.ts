@@ -637,6 +637,19 @@ export const assetsList: Asset[] = [
     color: '#358ed0',
     icon: icons.tribe,
   },
+  // fantom
+  {
+    name: 'Fantom',
+    symbol: 'FTM',
+    color: '#358ed0',
+    icon: icons.ftm,
+  },
+  {
+    name: 'Harmony ONE',
+    symbol: 'ONE',
+    color: '#358ed0',
+    icon: icons.one,
+  },
 ];
 
 export const getAssetInfoFactory = (_assetsList: Asset[]) => (_assetSymbol: string): Asset => {
