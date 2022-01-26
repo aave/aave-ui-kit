@@ -1,5 +1,9 @@
 // eslint-disable-next-line import/prefer-default-export
 export const assetsOrder = [
+  'ONE',
+  'WONE',
+  'FTM',
+  'WFTM',
   'MATIC',
   'WMATIC',
   'BUSD',

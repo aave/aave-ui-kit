@@ -1,5 +1,5 @@
-import icons from './icons';
 import aIcons from './aIcons';
+import icons from './icons';
 
 export interface Asset {
   name: string;
@@ -78,12 +78,6 @@ export const assetsList: Asset[] = [
     color: '#b6509e',
     icon: icons.lend,
     aIcon: aIcons.alend,
-  },
-  {
-    name: 'ETHLend',
-    symbol: 'ALEND',
-    color: '#b6509e',
-    icon: icons.alend,
   },
   {
     name: 'ChainLink',
@@ -295,6 +289,7 @@ export const assetsList: Asset[] = [
     formattedSymbol: 'DAI',
     color: '#f7b14a',
     icon: icons.dai,
+    aIcon: aIcons.adai,
   },
   {
     name: 'USD Coin',
@@ -302,6 +297,7 @@ export const assetsList: Asset[] = [
     formattedSymbol: 'USDC',
     color: '#2775ca',
     icon: icons.usdc,
+    aIcon: aIcons.ausdc,
   },
   {
     name: 'USDT Coin',
@@ -309,6 +305,7 @@ export const assetsList: Asset[] = [
     formattedSymbol: 'USDT',
     color: '#4db196',
     icon: icons.usdt,
+    aIcon: aIcons.ausdt,
   },
   {
     name: 'UNI USDC/ETH',
@@ -564,7 +561,8 @@ export const assetsList: Asset[] = [
     name: 'Wrapped Matic',
     symbol: 'WMATIC',
     color: '#2bbdf7',
-    icon: icons.matic,
+    icon: icons.wmatic,
+    aIcon: aIcons.awmatic,
   },
 
   // avalanche icon
@@ -573,7 +571,7 @@ export const assetsList: Asset[] = [
     symbol: 'AVAX',
     color: '#E84142',
     icon: icons.avax,
-    aIcon: aIcons.aavax, // TODO: create new aAvax svg
+    aIcon: aIcons.aavax,
   },
   {
     name: 'Wrapped Avalanche',
@@ -636,6 +634,37 @@ export const assetsList: Asset[] = [
     symbol: 'TRIBE',
     color: '#358ed0',
     icon: icons.tribe,
+  },
+
+  // fantom
+  {
+    name: 'FTM',
+    symbol: 'FTM',
+    color: '#358ed0',
+    icon: icons.ftm,
+    aIcon: aIcons.aftm,
+  },
+  {
+    name: 'Wrapped FTM',
+    symbol: 'WFTM',
+    color: '#358ed0',
+    icon: icons.wftm,
+    aIcon: aIcons.awftm,
+  },
+  // harmony
+  {
+    name: 'ONE',
+    symbol: 'ONE',
+    color: '#358ed0',
+    icon: icons.one,
+    aIcon: icons.aone,
+  },
+  {
+    name: 'Wrapped ONE',
+    symbol: 'WONE',
+    color: '#358ed0',
+    icon: icons.wone,
+    aIcon: icons.awone,
   },
 ];
 
