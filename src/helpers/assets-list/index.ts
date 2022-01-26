@@ -639,13 +639,14 @@ export const assetsList: Asset[] = [
   },
   // fantom
   {
-    name: 'Fantom',
+    name: 'FTM',
     symbol: 'FTM',
     color: '#358ed0',
     icon: icons.ftm,
   },
+  // harmony
   {
-    name: 'Harmony ONE',
+    name: 'ONE',
     symbol: 'ONE',
     color: '#358ed0',
     icon: icons.one,
