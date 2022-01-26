@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.20 (2022-01-26)
+
+
+### Features
+
+* add missing network tokens ([#92](https://githab.com/aave/aave-ui-kit/issues/92)) ([666cf3c](https://githab.com/aave/aave-ui-kit/commit/666cf3c98d3006c51d4db9d2aa36b382217a6687))
+
 ### 0.1.19 (2022-01-11)
 
 
