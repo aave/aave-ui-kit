@@ -44,6 +44,8 @@ import yfi from './yfi.svg';
 import zrx from './zrx.svg';
 import ftm from './ftm.svg';
 import one from './one.svg';
+import wftm from './wftm.svg';
+import wone from './wone.svg';
 
 interface Images {
   [name: string]: string;
@@ -96,4 +98,6 @@ export default {
   wmatic,
   ftm,
   one,
+  wftm,
+  wone,
 } as Images;

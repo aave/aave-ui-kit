@@ -644,6 +644,13 @@ export const assetsList: Asset[] = [
     icon: icons.ftm,
     aIcon: aIcons.aftm,
   },
+  {
+    name: 'Wrapped FTM',
+    symbol: 'WFTM',
+    color: '#358ed0',
+    icon: icons.wftm,
+    aIcon: aIcons.awftm,
+  },
   // harmony
   {
     name: 'ONE',
@@ -651,6 +658,13 @@ export const assetsList: Asset[] = [
     color: '#358ed0',
     icon: icons.one,
     aIcon: icons.aone,
+  },
+  {
+    name: 'Wrapped ONE',
+    symbol: 'WONE',
+    color: '#358ed0',
+    icon: icons.wone,
+    aIcon: icons.awone,
   },
 ];
 

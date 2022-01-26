@@ -40,6 +40,8 @@ import ayfi from './ayfi.svg';
 import azrx from './azrx.svg';
 import aftm from './aftm.svg';
 import aone from './aone.svg';
+import awftm from './awftm.svg';
+import awone from './awone.svg';
 
 interface Images {
   [name: string]: string;
@@ -88,4 +90,6 @@ export default {
   awmatic,
   aftm,
   aone,
+  awftm,
+  awone,
 } as Images;
