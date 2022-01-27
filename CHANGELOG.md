@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.21 (2022-01-27)
+
+
+### Features
+
+* added `GHST` asset support ([6cb9f42](https://githab.com/aave/aave-ui-kit/commit/6cb9f4217e5c8071e5e6a87c4098c56b80502606))
+
 ### 0.1.20 (2022-01-26)
 
 
