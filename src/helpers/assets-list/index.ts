@@ -281,6 +281,13 @@ export const assetsList: Asset[] = [
     icon: icons.eurs,
     aIcon: aIcons.aeurs,
   },
+  {
+    name: 'Aavegotchi',
+    symbol: 'GHST',
+    color: '#f133f3',
+    icon: icons.ghst,
+    aIcon: aIcons.aghst,
+  },
 
   // uniswap v1 market
   {

@@ -10,6 +10,7 @@ export const assetsOrder = [
   'DAI',
   'UNIDAI',
   'GUSD',
+  'GHST',
   'SUSD',
   'TUSD',
   'USDC',

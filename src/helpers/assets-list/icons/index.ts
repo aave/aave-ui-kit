@@ -46,6 +46,7 @@ import ftm from './ftm.svg';
 import one from './one.svg';
 import wftm from './wftm.svg';
 import wone from './wone.svg';
+import ghst from './ghst.svg';
 
 interface Images {
   [name: string]: string;
@@ -100,4 +101,5 @@ export default {
   one,
   wftm,
   wone,
+  ghst,
 } as Images;

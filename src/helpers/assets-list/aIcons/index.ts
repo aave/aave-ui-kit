@@ -42,6 +42,7 @@ import aftm from './aftm.svg';
 import aone from './aone.svg';
 import awftm from './awftm.svg';
 import awone from './awone.svg';
+import aghst from './aghst.svg';
 
 interface Images {
   [name: string]: string;
@@ -92,4 +93,5 @@ export default {
   aone,
   awftm,
   awone,
+  aghst,
 } as Images;
