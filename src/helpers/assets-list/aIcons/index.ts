@@ -95,4 +95,5 @@ export default {
   awftm,
   awone,
   aghst,
+  ashushi,
 } as Images;
