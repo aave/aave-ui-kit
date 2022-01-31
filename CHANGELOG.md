@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.22 (2022-01-31)
+
+
+### Bug Fixes
+
+* atokens export ([77f4008](https://githab.com/aave/aave-ui-kit/commit/77f40087bbd6ce6aa6ae58655330e5be5d298d72))
+
 ### 0.1.21 (2022-01-27)
 
 
