@@ -43,6 +43,7 @@ import aone from './aone.svg';
 import awftm from './awftm.svg';
 import awone from './awone.svg';
 import aghst from './aghst.svg';
+import ashushi from './ashushi.svg';
 
 interface Images {
   [name: string]: string;

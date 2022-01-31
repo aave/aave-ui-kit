@@ -23,6 +23,7 @@ export const assetsOrder = [
   'ETH',
   'WETH',
   'SETH',
+  'SUSHI',
   'LINK',
   'MKR',
   'RAI',

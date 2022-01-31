@@ -219,6 +219,13 @@ export const assetsList: Asset[] = [
     aIcon: aIcons.axsushi,
   },
   {
+    name: 'SUSHI',
+    symbol: 'SUSHI',
+    color: '#9a7dc0',
+    icon: icons.sushi,
+    aIcon: aIcons.asushi,
+  },
+  {
     name: 'renFIL',
     symbol: 'RENFIL',
     color: '#b9b9b9',
@@ -282,7 +289,7 @@ export const assetsList: Asset[] = [
     aIcon: aIcons.aeurs,
   },
   {
-    name: 'Aavegotchi',
+    name: 'Aavegotchi GHST',
     symbol: 'GHST',
     color: '#f133f3',
     icon: icons.ghst,
