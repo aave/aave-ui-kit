@@ -44,6 +44,8 @@ import awftm from './awftm.svg';
 import awone from './awone.svg';
 import aghst from './aghst.svg';
 import ashushi from './ashushi.svg';
+import astketh from './astketh.svg';
+import aens from './aens.svg';
 
 interface Images {
   [name: string]: string;
@@ -96,4 +98,6 @@ export default {
   awone,
   aghst,
   ashushi,
+  astketh,
+  aens,
 } as Images;
