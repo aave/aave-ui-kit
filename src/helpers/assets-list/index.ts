@@ -65,13 +65,6 @@ export const assetsList: Asset[] = [
     aIcon: aIcons.astketh,
   },
   {
-    name: 'ENS',
-    symbol: 'ENS',
-    color: '#000000',
-    icon: icons.ens,
-    aIcon: aIcons.aens,
-  },
-  {
     name: 'Wrapped ETH',
     symbol: 'WETH',
     color: '#000000',
@@ -662,6 +655,14 @@ export const assetsList: Asset[] = [
     symbol: 'TRIBE',
     color: '#358ed0',
     icon: icons.tribe,
+  },
+
+  {
+    name: 'Ethereum Name Service',
+    symbol: 'ENS',
+    color: '#2596be',
+    icon: icons.ens,
+    aIcon: aIcons.aens,
   },
 
   // fantom

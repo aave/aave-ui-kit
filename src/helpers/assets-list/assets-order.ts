@@ -40,6 +40,7 @@ export const assetsOrder = [
   'CRV',
   'DPI',
   'ENJ',
+  'ENS',
   'KNC',
   'LEND',
   'MANA',
