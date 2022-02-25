@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.24 (2022-02-25)
+
+
+### Bug Fixes
+
+* fix stheth icon ([#102](https://githab.com/aave/aave-ui-kit/issues/102)) ([f6bbce3](https://githab.com/aave/aave-ui-kit/commit/f6bbce397343524bbe03b51e3f6c420502d1b1d6))
+
 ### 0.1.23 (2022-02-25)
 
 
