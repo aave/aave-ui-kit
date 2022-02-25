@@ -48,6 +48,7 @@ import wftm from './wftm.svg';
 import wone from './wone.svg';
 import ghst from './ghst.svg';
 import sushi from './sushi.svg';
+import ens from './ens.svg';
 
 interface Images {
   [name: string]: string;
@@ -104,4 +105,5 @@ export default {
   wone,
   ghst,
   sushi,
+  ens
 } as Images;
