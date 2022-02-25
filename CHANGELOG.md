@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.23 (2022-02-25)
+
+
+### Features
+
+* added ENS/aENS ([#100](https://githab.com/aave/aave-ui-kit/issues/100)) ([3ef414a](https://githab.com/aave/aave-ui-kit/commit/3ef414ab1fc3984e8495ba5650886daf875b05a6))
+
 ### 0.1.22 (2022-01-31)
 
 
