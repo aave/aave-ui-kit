@@ -105,5 +105,5 @@ export default {
   wone,
   ghst,
   sushi,
-  ens
+  ens,
 } as Images;

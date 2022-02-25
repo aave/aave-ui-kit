@@ -97,5 +97,5 @@ export default {
   awone,
   aghst,
   ashushi,
-  aens
+  aens,
 } as Images;
