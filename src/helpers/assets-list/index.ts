@@ -58,6 +58,13 @@ export const assetsList: Asset[] = [
     aIcon: aIcons.aeth,
   },
   {
+    name: 'staked ETH',
+    symbol: 'STKETH',
+    color: '#000000',
+    icon: icons.stketh,
+    aIcon: aIcons.astketh,
+  },
+  {
     name: 'Wrapped ETH',
     symbol: 'WETH',
     color: '#000000',
