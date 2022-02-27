@@ -61,8 +61,8 @@ export const assetsList: Asset[] = [
     name: 'Lido Staked Ether',
     symbol: 'STETH',
     color: '#000000',
-    icon: icons.stketh,
-    aIcon: aIcons.astketh,
+    icon: icons.steth,
+    aIcon: aIcons.asteth,
   },
   {
     name: 'Wrapped ETH',
