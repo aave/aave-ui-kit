@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.27 (2022-02-27)
+
+
+### Bug Fixes
+
+* how many mistakes can one make ([#107](https://githab.com/aave/aave-ui-kit/issues/107)) ([d566dab](https://githab.com/aave/aave-ui-kit/commit/d566dabe0078c42952298e04d35f5e4561e88f4a))
+
 ### 0.1.26 (2022-02-27)
 
 
