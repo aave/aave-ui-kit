@@ -48,7 +48,7 @@ import wftm from './wftm.svg';
 import wone from './wone.svg';
 import ghst from './ghst.svg';
 import sushi from './sushi.svg';
-import stketh from './stketh.svg';
+import steth from './steth.svg';
 import ens from './ens.svg';
 
 interface Images {
@@ -106,6 +106,6 @@ export default {
   wone,
   ghst,
   sushi,
-  stketh,
+  steth,
   ens,
 } as Images;
