@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.1.28 (2022-03-06)
+
+
+### Bug Fixes
+
+* ens svg icon ([#111](https://githab.com/aave/aave-ui-kit/issues/111)) ([800bc35](https://githab.com/aave/aave-ui-kit/commit/800bc3567bc7ba13850b7d41958089dff7c85e31))
+
 ### 0.1.27 (2022-02-27)
 
 
