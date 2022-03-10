@@ -46,6 +46,7 @@ import aghst from './aghst.svg';
 import ashushi from './ashushi.svg';
 import asteth from './asteth.svg';
 import aens from './aens.svg';
+import aust from './aust.svg';
 
 interface Images {
   [name: string]: string;
@@ -100,4 +101,5 @@ export default {
   ashushi,
   asteth,
   aens,
+  aust,
 } as Images;

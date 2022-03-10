@@ -695,31 +695,42 @@ export const assetsList: Asset[] = [
     icon: icons.wone,
     aIcon: icons.awone,
   },
+
+  // ust
+  {
+    name: 'Terra UST',
+    symbol: 'UST',
+    color: '#0e3ca5',
+    icon: icons.ust,
+    aIcon: aIcons.ust,
+  },
 ];
 
-export const getAssetInfoFactory = (_assetsList: Asset[]) => (_assetSymbol: string): Asset => {
-  const assetSymbol = _assetSymbol.toUpperCase();
-  // eslint-disable-next-line @typescript-eslint/no-shadow
-  const asset = _assetsList.find((asset: Asset) => asset.symbol === assetSymbol);
-  const symbolFormatted = (asset && asset.formattedSymbol) || (asset && asset.symbol);
-  const symbolsArray = symbolFormatted?.split('_').filter(e => String(e).trim());
+export const getAssetInfoFactory =
+  (_assetsList: Asset[]) =>
+  (_assetSymbol: string): Asset => {
+    const assetSymbol = _assetSymbol.toUpperCase();
+    // eslint-disable-next-line @typescript-eslint/no-shadow
+    const asset = _assetsList.find((asset: Asset) => asset.symbol === assetSymbol);
+    const symbolFormatted = (asset && asset.formattedSymbol) || (asset && asset.symbol);
+    const symbolsArray = symbolFormatted?.split('_').filter((e) => String(e).trim());
 
-  const isSymbolsArrayMoreThanOne = !!symbolsArray && symbolsArray.length > 1;
-  const formattedName = isSymbolsArrayMoreThanOne ? asset && asset.name : symbolFormatted;
+    const isSymbolsArrayMoreThanOne = !!symbolsArray && symbolsArray.length > 1;
+    const formattedName = isSymbolsArrayMoreThanOne ? asset && asset.name : symbolFormatted;
 
-  if (asset) {
+    if (asset) {
+      return {
+        ...asset,
+        symbolFormatted,
+        symbolsArray,
+        formattedName,
+      };
+    }
+
     return {
-      ...asset,
-      symbolFormatted,
-      symbolsArray,
-      formattedName,
+      name: assetSymbol,
+      symbol: assetSymbol,
     };
-  }
-
-  return {
-    name: assetSymbol,
-    symbol: assetSymbol,
   };
-};
 
 export const getAssetInfo = getAssetInfoFactory(assetsList);
