@@ -695,6 +695,15 @@ export const assetsList: Asset[] = [
     icon: icons.wone,
     aIcon: icons.awone,
   },
+
+  // ust
+  {
+    name: 'Terra UST',
+    symbol: 'UST',
+    color: '#0e3ca5',
+    icon: icons.ust,
+    aIcon: aIcons.ust,
+  },
 ];
 
 export const getAssetInfoFactory = (_assetsList: Asset[]) => (_assetSymbol: string): Asset => {

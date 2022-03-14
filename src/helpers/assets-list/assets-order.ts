@@ -17,6 +17,7 @@ export const assetsOrder = [
   'UNIUSDC',
   'USDP',
   'USDT',
+  'UST',
   'UNIUSDT',
   'EURS',
   'BAL',
